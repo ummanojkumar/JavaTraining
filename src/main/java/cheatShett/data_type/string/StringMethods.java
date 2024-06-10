@@ -1,4 +1,4 @@
-package cheatShett.data_type;
+package cheatShett.data_type.string;
 
 public class StringMethods {
     public static void main(String[] args) {
