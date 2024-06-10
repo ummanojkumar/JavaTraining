@@ -1,4 +1,4 @@
-package cheatShett;
+package cheatShett.array;
 
 import java.util.Arrays;
 import java.util.OptionalDouble;
