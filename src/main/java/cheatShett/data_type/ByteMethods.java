@@ -1,4 +1,4 @@
-package cheatShett;
+package cheatShett.data_type;
 
 public class ByteMethods {
 

@@ -1,6 +1,6 @@
-package cheatShett;
+package cheatShett.data_type;
 
-public class StringCheatSheet {
+public class StringMethods {
     public static void main(String[] args) {
         String str = "Hello, World!";
         String anotherStr = "hello, world!";

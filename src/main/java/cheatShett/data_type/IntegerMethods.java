@@ -1,4 +1,4 @@
-package cheatShett;
+package cheatShett.data_type;
 
 public class IntegerMethods {
     public static void main(String[] args) {
