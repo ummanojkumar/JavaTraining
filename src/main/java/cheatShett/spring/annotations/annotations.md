@@ -20,6 +20,8 @@
 
 10. **@Service**: Specialization of @Component, marking a class as a service component in the business layer.
 
+<br>
+
 11. **@Repository**: Specialization of @Component, marking a class as a repository component in the persistence layer, usually interacting with a database.
 
 12. **@Configuration**: Mark a class as a configuration class in Spring, typically used with @Bean to define beans and their dependencies.
@@ -33,9 +35,6 @@
 16. **@Qualifier**: Specify which bean to autowire when multiple beans of the same type are present in the application context.
 
 17. **@EnableAutoConfiguration**: Enable Spring Boot's auto-configuration mechanism, automatically configuring beans and settings based on classpath dependencies and property settings.
-    markdown
-    Copy code
-## Additional Spring Boot Annotations
 
 18. **@Transactional**: Mark a method, class, or interface as transactional, allowing for automatic transaction management by Spring.
 
@@ -43,6 +42,7 @@
 
 20. **@ResponseBody**: Indicate that the return value of a controller method should be serialized directly into the HTTP response body, useful in RESTful web services.
 
+<br>
 21. **@ControllerAdvice**: Global controller advice that can be used to define exception handling and model attributes for all controllers.
 
 22. **@CrossOrigin**: Configure cross-origin resource sharing (CORS) for specific controllers or controller methods, allowing web clients from different origins to access resources.
@@ -62,6 +62,8 @@
 29. **@MessageMapping**: Map WebSocket messages to specific message-handling methods in a controller, similar to @RequestMapping for HTTP requests.
 
 30. **@SendTo**: Specify the destination to which a WebSocket message should be sent, used in conjunction with @MessageMapping.
+
+<br>
 
 31. **@ConfigurationProperties**: Bind external configuration properties to a Java bean, allowing for easy configuration of Spring Boot applications.
 
@@ -83,6 +85,8 @@
 
 40. **@Entity**: Mark a Java class as a JPA entity, representing a table in the database. Used in conjunction with @Table to specify the table name.
 
+<br>
+
 41. **@Table**: Specify the name of the database table associated with a JPA entity. Used in conjunction with @Entity.
 
 42. **@Id**: Mark a field as the primary key of a JPA entity. Typically used in conjunction with @GeneratedValue to specify automatic primary key generation.
@@ -102,6 +106,8 @@
 49. **@JsonProperty**: Specify a custom name for a field during JSON serialization and deserialization, overriding the default field name.
 
 50. **@ExceptionHandler**: Define methods to handle specific exceptions thrown by controllers, providing custom error handling logic.
+
+<br>
 
 51. **@GetMapping, @PostMapping, @PutMapping, @DeleteMapping**: Shorthand annotations for @RequestMapping with specific HTTP methods (GET, POST, PUT, DELETE).
 
@@ -123,6 +129,8 @@
 
 60. **@EnableAsync**: Enable support for asynchronous method execution in a Spring Boot application, typically used in conjunction with @Async.
 
+<br>
+
 61. **@Scheduled**: Define methods to be invoked periodically or at fixed intervals, used for scheduling tasks such as data cleanup, report generation, etc.
 
 62. **@Retryable**: Retry a method multiple times in case of failure, with customizable retry conditions and backoff strategies.
@@ -142,6 +150,8 @@
 69. **@Primary**: Indicate that a bean should be given precedence when multiple beans of the same type are present in the application context.
 
 70. **@Lazy**: Delay the creation of a bean until it is first requested, improving startup time and memory usage in larger applications.
+
+<br>
 
 71. **@PropertySource**: Specify the location of external property files to be loaded into the Spring environment, allowing for externalized configuration.
 
@@ -163,6 +173,8 @@
 
 80. **@Cacheable, @CachePut, @CacheEvict**: Annotations used for caching method results, specifying which methods should be cached, updated, or evicted.
 
+<br>
+
 81. **@CacheConfig**: Specify common caching configuration at the class level, allowing for centralized cache configuration for multiple methods.
 
 82. **@EnableBatchProcessing**: Enable batch processing support in a Spring Boot application, typically used for processing large volumes of data in batches.
@@ -182,6 +194,8 @@
 89. **@CacheResult, @CacheRemove**: Annotations used in conjunction with JCache (JSR-107) for caching method results and evicting cached entries.
 
 90. **@JmsListener**: Define a method as
+
+<br>
 
 91. **@JmsListener**: Define a method as a listener for JMS (Java Message Service) messages, allowing for asynchronous message consumption.
 
@@ -203,6 +217,8 @@
 
 100. **@ExceptionHandler**: Define methods to handle specific exceptions thrown by controllers or other components, providing custom error handling logic.
 
+<br>
+
 101. **@FunctionalInterface**: Annotation used to mark an interface as a functional interface, indicating that it has exactly one abstract method and can be used as a lambda expression or method reference target.
 
 102. **@ScheduledAnnotationBeanPostProcessor**: Specialized bean post-processor for processing methods annotated with @Scheduled, enabling the scheduling of tasks using the @Scheduled annotation.
@@ -222,6 +238,8 @@
 109. **@PreAuthorize, @PostAuthorize, @PreFilter, @PostFilter**: Method-level security annotations in Spring Security, providing fine-grained control over method access based on user roles, permissions, or other criteria.
 
 110. **@EnableCircuitBreaker**: Enable circuit breaker support in a Spring Boot application, allowing for fault tolerance and resilience patterns such as bulkhead, fallback, and circuit breaking in distributed systems.
+
+<br>
 
 111. **@HystrixCommand**: Define a method as a circuit breaker-protected command, allowing for fallback logic to be executed in case of failure or timeout.
 
@@ -243,6 +261,8 @@
 
 120. **@EnableJpaRepositories**: Enable JPA repository support in a Spring Boot application, allowing for the creation of repository interfaces that extend JpaRepository.
 
+<br>
+
 121. **@EnableScheduling**: Enable scheduling support in a Spring Boot application, allowing for the scheduling of tasks using @Scheduled annotations.
 
 122. **@EnableAsync**: Enable support for asynchronous method execution in a Spring Boot application, allowing for improved performance and responsiveness by executing tasks in separate threads.
@@ -262,6 +282,8 @@
 129. **@MockBean**: Annotation used to define a mock bean for testing purposes, allowing for the replacement of real beans with mock implementations in tests.
 
 130. **@SpyBean**: Annotation used to define a spy bean for testing purposes, allowing for the partial mocking of real beans in tests.
+
+<br>
 
 131. **@DataJpaTest**: Annotation used to specify that a class is a JPA repository test class, typically used in combination with @SpringBootTest to test Spring Data JPA repositories.
 
@@ -283,6 +305,8 @@
 
 140. **@ConfigurationPropertiesBinding**: Annotation used to specify a custom converter or binder for configuration properties, allowing for customization of property binding logic.
 
+<br>
+
 141. **@ControllerAdvice**: Annotation used to define global controller advice, allowing for centralized exception handling, model attribute setup, and more for all controllers in a Spring Boot application.
 
 142. **@ModelAttribute**: Annotation used to bind request parameters to model attributes in a controller method, typically used for pre-populating form fields or providing additional data to the view.
@@ -302,6 +326,8 @@
 149. **@Valid**: Annotation used to enable bean validation for method parameters or return values in a controller, triggering validation based on JSR-380 annotations such as @NotNull, @NotBlank, @Size, etc.
 
 150. **@Autowired**: Annotation used to automatically inject dependencies into Spring beans, typically applied to fields, constructors, or setter methods.
+
+<br>
 
 151. **@Component**: Annotation used to mark a class as a Spring component, indicating that it should be automatically detected and registered as a bean in the Spring application context.
 
@@ -323,6 +349,8 @@
 
 160. **@EnableWebSecurity**: Annotation used to enable Spring Security's web security support, allowing for configuration of HTTP security settings using Java-based configuration or XML configuration.
 
+<br>
+
 161. **@EnableJpaRepositories**: Annotation used to enable JPA repository support in a Spring Boot application, allowing for the creation of repository interfaces that extend JpaRepository.
 
 162. **@EnableCaching**: Annotation used to enable caching support in a Spring Boot application, allowing for the caching of method results to improve performance.
@@ -342,6 +370,8 @@
 169. **@SpringBootTest**: Annotation used to specify that a class is a Spring Boot test class, typically used in combination with JUnit 5 to test Spring Boot applications.
 
 170. **@AutoConfigureMockMvc**: Annotation used to automatically configure a MockMvc instance for testing Spring MVC controllers, typically used in combination with @SpringBootTest.
+
+<br>
 
 171. **@MockBean**: Annotation used to define a mock bean for testing purposes, allowing for the replacement of real beans with mock implementations in tests.
 
@@ -363,6 +393,8 @@
 
 180. **@JmsListener**: Annotation used to define a method as a listener for JMS messages, allowing for asynchronous message consumption from JMS message queues or topics.
 
+<br>
+
 181. **@EnableRabbit**: Annotation used to enable RabbitMQ support in a Spring Boot application, allowing for the configuration of RabbitMQ connections, exchanges, queues, etc.
 
 182. **@RabbitListener**: Annotation used to define a method as a listener for RabbitMQ messages, allowing for asynchronous message consumption from RabbitMQ message queues.
@@ -382,6 +414,8 @@
 189. **@EnableEurekaServer**: Annotation used to enable Eureka server support in a Spring Boot application, allowing for self-registration and discovery of microservices in a distributed system.
 
 190. **@EnableFeignClients**: Annotation used to enable Feign client support in a Spring Boot application, allowing for declarative HTTP client integration with microservices using interfaces and annotations.
+
+<br>
 
 191. **@EnableHystrixDashboard**: Annotation used to enable Hystrix dashboard support in a Spring Boot application, allowing for real-time monitoring and visualization of circuit breaker metrics using the Hystrix dashboard.
 
@@ -403,6 +437,8 @@
 
 200. **@EnableSwagger2**: Annotation used to enable Swagger 2 documentation support in a Spring Boot application, allowing for automatic generation of API documentation based on Swagger annotations.
 
+<br>
+
 201. **@SpringBootTest**: Annotation used to specify that a class is a Spring Boot test class, typically used in combination with JUnit 5 to test Spring Boot applications.
 
 202. **@AutoConfigureMockMvc**: Annotation used to automatically configure a MockMvc instance for testing Spring MVC controllers, typically used in combination with @SpringBootTest.
@@ -422,4 +458,3 @@
 209. **@DataMongoTest**: Annotation used to specify that a class is a MongoDB repository test class, typically used in combination with @SpringBootTest to test Spring Data MongoDB repositories.
 
 210. **@WebFluxTest**: Annotation used to specify that a class is a WebFlux controller test class, typically used in combination with @SpringBootTest to test WebFlux controllers.
-
