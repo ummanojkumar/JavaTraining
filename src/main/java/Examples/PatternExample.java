@@ -1,3 +1,5 @@
+package Examples;
+
 public class PatternExample {
 
     public static void main(String[] args) {
